@@ -2,21 +2,33 @@ body {
     background-color:E5E5E5;
     color:rgba(117, 117, 117, 1);
 }
+.logo{
+    color: #212121;
+}
 .web{
     color: #2196F3;
 }
-.studio{
-    color: #000000;
-}
-.contacts{
+.link-nav{
     color: #212121;
 }
-
+.link-nav:hover{
+    color: #2196F3;
+}
+#e-mail{
+    color:rgba(117, 117, 117, 1) ;
+}
+#e-mail:hover{
+    color:#2196F3
+}
+.heading-text{
+    color: #212121;
+}
+.address{
+    color:#212121;
+}
+#post, #telephone{
+    color:rgba(117, 117, 117, 1)
+}
 
 /* основной цвет текста 757575 */
 /* дополнительный цвет Портфолио 212121  */
-/*  пошта hover и лого и кнопка синий 2196F3 */
-/* текст адрес FFFFFF  */
-/* почта в футере и телефон rgba(255, 255, 255, 0.6) */
-/* bachground E5E5E5 */
-/* backgrond here 2F303A */
