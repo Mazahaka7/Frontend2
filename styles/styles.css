@@ -9,11 +9,20 @@ body {
     --accent-text-color:#2196F3;
     --primery-white-color:#ffffff;
 }
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #E5E5E5;
+    letter-spacing: 0.03em;    
+}
 .logo {
     color:#212121;
+    font-family: Raleway, sans-serif;
 }
 .web{
     color: #2196F3;
+}
+.navigation{
+    letter-spacing: 0.02em;
 }
 .link-nav{
     color: var(--title-text-color);
@@ -26,6 +35,12 @@ body {
 }
 #e-mail:hover{
     color: var(--accent-text-color);
+}
+.hero{
+    letter-spacing: 0.06em;
+}
+.hero-button{
+    font-size: inherit;
 }
 .heading-text, .section-title{
     color: var(--title-text-color);
@@ -53,6 +68,12 @@ body {
 }
 .link-current{
     color: var(--accent-text-color)
-};
+}
+footer{
+    background-color: #2F303A;
+}
+.section-comando{
+    background-color:#F5F4FA;
+}
 /* основной цвет текста 757575 */
 /* дополнительный цвет Портфолио 212121  */
