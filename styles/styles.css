@@ -39,10 +39,56 @@ body{
 .hero{
     letter-spacing: 0.06em;
 }
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+}
 .hero-button{
+    background-color: #2196F3;
+    color: #ffffff;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
     font-size: inherit;
 }
-.heading-text, .section-title{
+.heading-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+.heading-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+p{
+    font-weight: 400;
+}
+.features > p{
+    font-size: 14px;
+    line-height: 1.7;
+}
+.section-comando > p{
+    font-size: 16px;
+    line-height: 1.2;
+    /* identical to box height */
+    text-align: center;
+}
+.contacts-list > p{
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.heading-text, .section-title, .heading-title{
     color: var(--title-text-color);
 }
 .address{
@@ -51,12 +97,8 @@ body{
 #post, #telephone{
     color: var(--primary-text-color);
 }
-.list{
+.contacts-list, .list{
     list-style: none;
-}
-.hero-button{
-    background-color: #2196F3;
-    color: #ffffff;
 }
 .btn-select{
     background-color:  var(--primary-button-color);
@@ -69,11 +111,11 @@ body{
 .link-current{
     color: var(--accent-text-color)
 }
-footer{
-    background-color: #2F303A;
-}
 .section-comando{
     background-color:#F5F4FA;
+}
+footer{
+    background-color: #2F303A;
 }
 /* основной цвет текста 757575 */
 /* дополнительный цвет Портфолио 212121  */
