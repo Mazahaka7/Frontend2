@@ -1,8 +1,4 @@
 /* Colors settings */
-body {
-    background-color:#E5E5E5;
-    color:var(--primary-text-color);
-}
 :root{
     --primary-text-color:rgba(117, 117, 117, 1);
     --primary-button-color:#F5F4FA;
@@ -10,9 +6,19 @@ body {
     --accent-text-color:#2196F3;
     --primery-white-color:#ffffff;
 }
+body {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;    
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    background-color:#E5E5E5;
+    color:var(--primary-text-color);
+}
 .logo {
     color:#212121;
     font-family: Raleway, sans-serif;
+    text-decoration: none;
 }
 .web{
     color: #2196F3;
@@ -25,6 +31,7 @@ body {
 }
 #e-mail, #phone{
     color:var(--primary-text-color);
+    text-decoration: none;
 }
 #e-mail:hover, #phone:hover{
     color: var(--accent-text-color);
@@ -40,6 +47,7 @@ body {
 }
 .contacts-list, .list{
     list-style: none;
+    text-decoration: none;
 }
 .btn-select{
     background-color:  var(--primary-button-color);
@@ -63,11 +71,6 @@ footer > .logo{
 }
 
 /* Fonts settings */
-body{
-    font-family: Roboto, sans-serif;
-    background-color: #E5E5E5;
-    letter-spacing: 0.03em;    
-}
 .navigation{
     letter-spacing: 0.02em;
 }
@@ -105,7 +108,7 @@ body{
 }
 .section-title > p{
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.86;
 }
 .heading-title{
     font-weight: 700;
@@ -119,20 +122,8 @@ body{
     line-height: 1.1;
     text-transform: uppercase;
 }
-p{
-    font-weight: 400;
-}
-.features > p{
-    font-size: 14px;
-    line-height: 1.7;
-}
 .section-comando > p{
     font-size: 16px;
     line-height: 1.2;
-    /* identical to box height */
     text-align: center;
-}
-.contacts-list{
-    font-size: 14px;
-    line-height: 1.7;
 }
