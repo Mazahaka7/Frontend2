@@ -18,12 +18,16 @@ body {
 .logo {
     color:#212121;
     font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
     text-decoration: none;
 }
 .web{
     color: #2196F3;
 }
 .link-nav{
+    letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
 .link-nav:hover{
@@ -69,11 +73,11 @@ footer{
 footer > .logo{
     color: var(--primery-white-color)
 }
+.hidden {
+    display: none;
+  }
 
 /* Fonts settings */
-.navigation{
-    letter-spacing: 0.02em;
-}
 .hero{
     letter-spacing: 0.06em;
 }
