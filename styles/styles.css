@@ -1,3 +1,89 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
 /* Colors settings */
 :root{
     --primary-text-color:rgba(117, 117, 117, 1);
@@ -12,10 +98,20 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    background-color:#E5E5E5;
+    background-color:#FFFFFF;
     color:var(--primary-text-color);
+    margin-left: auto;
+    margin-right: auto;
 }
-.logo {
+.container{
+    width: 1230px;
+    outline: 1px dashed rosybrown;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 94px;
+}
+    
+.logo{
     color:#212121;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -54,8 +150,17 @@ body {
     text-decoration: none;
 }
 .btn-select{
+    display: inline-block;
+    height: 38px;
+    border-radius: 4px;
+    padding: 6px 22px;
     background-color:  var(--primary-button-color);
     color:var(--title-text-color) ;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
 }
 .btn-select:hover{
     background-color:  var(--accent-text-color);
@@ -63,9 +168,6 @@ body {
 }
 .link-current{
     color: var(--accent-text-color)
-}
-.section-comando{
-    background-color:#F5F4FA;
 }
 footer{
     background-color: #2F303A;
@@ -89,6 +191,13 @@ footer > .logo{
     text-transform: uppercase;
 }
 .hero-button{
+    min-width:200px;
+    height:50px;
+    margin-top: 30px;
+    margin-left:700px;
+    margin-right:700px;
+    border-radius: 4px;
+    padding: 10px 32px;
     background-color: #2196F3;
     color: #ffffff;
 
@@ -97,12 +206,6 @@ footer > .logo{
     line-height: 1.9;
     text-align: center;
     font-size: inherit;
-}
-.btn-select{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
 }
 .section-title{
     font-weight: 700;
@@ -126,8 +229,24 @@ footer > .logo{
     line-height: 1.1;
     text-transform: uppercase;
 }
+.section-comando{
+    background-color:#F5F4FA;
+}
 .section-comando > p{
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
+}
+.section-comando > .container{
+    margin-bottom: 0px;
+    padding-top: 94px;
+}
+header > .studio-nav{
+    margin-bottom: 0px;
+}
+.filter{
+    margin-bottom: 34px;
+}
+.portfolio-list > li{
+    margin-bottom: 30px;
 }

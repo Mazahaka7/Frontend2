@@ -8,26 +8,29 @@
     <title>MELstudio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <!--Шапка-->
 <header>
-<nav class="navigation">
-    <a  class='logo' href="./index.html"><span class="web">Web</span>Studio</a>
-    <ul class="nav list">
-        <li><a href="студия" class="link-nav">Студия</a></li>
-        <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
-        <li><a href="контакты" class="link-nav">Контакты</a></li>
-    </ul>
-</nav>
-<section class="contacts-list">
-    <ul class="list">
-        <li><a href="info@devstudio.com" id="e-mail">info@devstudio.com</a></li>
-        <li><a href="+38 096 111 11 11" id="phone">+38 096 111 11 11</a></li>
-    </ul>
-</section>
+<div class="studio-nav container">
+    <nav class="navigation">
+        <a  class='logo' href="./index.html"><span class="web">Web</span>Studio</a>
+        <ul class="nav list">
+            <li><a href="студия" class="link-nav">Студия</a></li>
+            <li><a href="./portfolio.html" class="link-nav">Портфолио</a></li>
+            <li><a href="контакты" class="link-nav">Контакты</a></li>
+        </ul>
+    </nav>
+    <section class="contacts-list">
+        <ul class="list">
+            <li><a href="info@devstudio.com" id="e-mail">info@devstudio.com</a></li>
+            <li><a href="+38 096 111 11 11" id="phone">+38 096 111 11 11</a></li>
+        </ul>
+    </section>
+</div>
     
 </header>
 
@@ -39,7 +42,7 @@
     <button type="button" class="hero-button">Заказать услугу</button>
 </section>
 <!--Секция особенности-->
-<section class="features">
+<section class="features container">
     <!-- <h2>Особенности</h2> -->
     <ul class="list">
         <li>
@@ -65,7 +68,7 @@
     </ul>
 </section>
 <!--Секция Чем занимаемся-->
-<section>
+<section class="container">
     <h2 class="heading-title">Чем мы занимаемся</h2>
     <ul class="list">
         <li>
@@ -81,8 +84,9 @@
 </section>
 <!--Секция Команда-->
 <section class="section-comando">
-    <h2 class="heading-title">Наша команда</h2>
-<ul class="list" >
+    <div  class="container">
+        <h2 class="heading-title">Наша команда</h2>
+<ul class="list">
     <li>
         <img src="./images/photo1.jpeg" alt="Фото Дизйнера" width="370">
         <h3 class="heading-text">Игорь Демьяненко</h3>
@@ -101,9 +105,10 @@
     <li>
         <img src="./images/photo4.jpeg" alt="Фото Дизайнера UI" width="370">
         <h3 class="heading-text">Михаил Ермаков</h3>
-        <p>UI Designer</p>
+        <p class="comando-position">UI Designer</p>
     </li>
 </ul>
+    </div>
 </section>
 </main>
 
