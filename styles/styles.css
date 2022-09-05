@@ -109,8 +109,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 94px;
-}
-    
+}  
+/* Main Logo */
 .logo{
     color:#212121;
     font-family: Raleway, sans-serif;
@@ -122,6 +122,7 @@ body {
 .web{
     color: #2196F3;
 }
+/* Color and accent */
 .link-nav{
     letter-spacing: 0.02em;
     color: var(--title-text-color);
@@ -136,18 +137,73 @@ body {
 #e-mail:hover, #phone:hover{
     color: var(--accent-text-color);
 }
-.contacts-list{
-    color:var(--primary-text-color);
-}
 .heading-text, .section-title, .heading-title{
     color: var(--title-text-color);
 }
 .address{
     color: var(--primery-white-color);
 }
-.contacts-list, .list{
+.list{
     list-style: none;
     text-decoration: none;
+}
+.link-current{
+    color: var(--accent-text-color)
+}
+footer{
+    background-color: #2F303A;
+}
+footer > .logo{
+    color: var(--primery-white-color)
+}
+
+/* Hero section */
+.hero{
+    letter-spacing: 0.06em;
+}
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hidden {
+    display: none;
+  }
+.hero-button{
+    min-width:200px;
+    height:50px;
+    margin-top: 30px;
+    margin-left:700px;
+    margin-right:700px;
+    border-radius: 4px;
+    padding: 10px 32px;
+    background-color: #2196F3;
+    color: #ffffff;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    font-size: inherit;
+}
+/* Portfolio page */
+.section-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.section-title > p{
+    font-size: 16px;
+    line-height: 1.86;
+}
+.portfolio-list > li{
+    margin-bottom: 30px;
+}
+.filter{
+    margin-bottom: 34px;
 }
 .btn-select{
     display: inline-block;
@@ -166,57 +222,7 @@ body {
     background-color:  var(--accent-text-color);
     color:var(--primery-white-color)
 }
-.link-current{
-    color: var(--accent-text-color)
-}
-footer{
-    background-color: #2F303A;
-}
-footer > .logo{
-    color: var(--primery-white-color)
-}
-.hidden {
-    display: none;
-  }
-
-/* Fonts settings */
-.hero{
-    letter-spacing: 0.06em;
-}
-.hero-title{
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    text-transform: uppercase;
-}
-.hero-button{
-    min-width:200px;
-    height:50px;
-    margin-top: 30px;
-    margin-left:700px;
-    margin-right:700px;
-    border-radius: 4px;
-    padding: 10px 32px;
-    background-color: #2196F3;
-    color: #ffffff;
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
-    font-size: inherit;
-}
-.section-title{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-.section-title > p{
-    font-size: 16px;
-    line-height: 1.86;
-}
+/* Section text parameters */
 .heading-title{
     font-weight: 700;
     font-size: 36px;
@@ -229,10 +235,11 @@ footer > .logo{
     line-height: 1.1;
     text-transform: uppercase;
 }
+/* Comandos section */
 .section-comando{
     background-color:#F5F4FA;
 }
-.section-comando > p{
+.section-comando > .text{
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
@@ -241,12 +248,32 @@ footer > .logo{
     margin-bottom: 0px;
     padding-top: 94px;
 }
-header > .studio-nav{
+
+/* Header */
+header > .header-nav{
     margin-bottom: 0px;
 }
-.filter{
-    margin-bottom: 34px;
+.navigation{
+    display: flex;
+    align-items: center;
 }
-.portfolio-list > li{
-    margin-bottom: 30px;
+.nav{
+    display:flex;
+    margin-left: 93px;
+
 }
+.nav .link-nav{
+    display: block;
+}
+.nav .item:not(:last-child){
+    margin-right: 50px;
+}
+.contacts-list{
+    display: flex;
+    margin-left: 331px;
+}
+/* Oldschool selector "+" - сусідство */
+.contacts-list .contacts + .contacts{
+    margin-left: 50px;
+}
+
