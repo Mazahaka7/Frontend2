@@ -104,8 +104,10 @@ body {
     margin-right: auto;
 }
 .container{
-    width: 1230px;
+    width: 1200px;
     outline: 1px dashed rosybrown;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 94px;
@@ -122,7 +124,6 @@ body {
 .web{
     color: #2196F3;
 }
-/* Color and accent */
 .link-nav{
     letter-spacing: 0.02em;
     color: var(--title-text-color);
@@ -137,35 +138,38 @@ body {
 #e-mail:hover, #phone:hover{
     color: var(--accent-text-color);
 }
+
+/* Color and accent */
 .heading-text, .section-title, .heading-title{
     color: var(--title-text-color);
-}
-.address{
-    color: var(--primery-white-color);
 }
 .list{
     list-style: none;
     text-decoration: none;
 }
-.link-current{
-    color: var(--accent-text-color)
-}
+
+/* Footer part */
 footer{
     background-color: #2F303A;
 }
 footer > .logo{
     color: var(--primery-white-color)
 }
+.address{
+    color: var(--primery-white-color);
+}
 
 /* Hero section */
 .hero{
+    width:1600px;
+    height:600px;
+    text-align: center;
     letter-spacing: 0.06em;
 }
 .hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     text-transform: uppercase;
 }
 .hidden {
@@ -175,8 +179,6 @@ footer > .logo{
     min-width:200px;
     height:50px;
     margin-top: 30px;
-    margin-left:700px;
-    margin-right:700px;
     border-radius: 4px;
     padding: 10px 32px;
     background-color: #2196F3;
@@ -188,7 +190,23 @@ footer > .logo{
     text-align: center;
     font-size: inherit;
 }
+
+/* Контейнер Features */
+.features-list{
+    display:flex;
+    justify-content: space-between;
+}
+.features-list > .item:not(:last-child){
+    margin-right:30px;
+}
+.features-list > .item{
+    max-width: 270px;
+}
+
 /* Portfolio page */
+.link-current{
+    color: var(--accent-text-color)
+}
 .section-title{
     font-weight: 700;
     font-size: 18px;
@@ -228,6 +246,7 @@ footer > .logo{
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
+    margin-top: 94px;
 }
 .heading-text{
     font-weight: 700;
@@ -237,16 +256,23 @@ footer > .logo{
 }
 /* Comandos section */
 .section-comando{
+    width:1600px;
+    height: 648px;
+    margin-bottom: 0px;
+    margin-top: 94px;
     background-color:#F5F4FA;
+}
+.section-comando .heading-title{
+    padding-bottom:50px;
+    padding-top: 94px;
 }
 .section-comando > .text{
     font-size: 16px;
     line-height: 1.2;
     text-align: center;
 }
-.section-comando > .container{
-    margin-bottom: 0px;
-    padding-top: 94px;
+.comando-list{
+    display:flex;
 }
 
 /* Header */
