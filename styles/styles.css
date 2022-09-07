@@ -106,11 +106,9 @@ body {
 .container{
     width: 1200px;
     outline: 1px dashed rosybrown;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 94px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* margin-bottom: 94px; */
 }  
 /* Main Logo */
 .logo{
@@ -147,16 +145,46 @@ body {
     list-style: none;
     text-decoration: none;
 }
+/* Section text parameters */
+.heading-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 94px;
+}
+.heading-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
 
-/* Footer part */
-footer{
-    background-color: #2F303A;
+/* Header */
+header > .header-nav{
+    margin-bottom: 0px;
 }
-footer > .logo{
-    color: var(--primery-white-color)
+.navigation{
+    display: flex;
+    align-items: center;
 }
-.address{
-    color: var(--primery-white-color);
+.nav{
+    display:flex;
+    margin-left: 93px;
+}
+.nav .link-nav{
+    display: block;
+}
+.nav .item:not(:last-child){
+    margin-right: 50px;
+}
+.contacts-list{
+    display: flex;
+    margin-left: 331px;
+}
+/* Oldschool selector "+" - сусідство */
+.contacts-list .contacts + .contacts{
+    margin-left: 50px;
 }
 
 /* Hero section */
@@ -203,6 +231,66 @@ footer > .logo{
     max-width: 270px;
 }
 
+/* Контейнер Чем занимаемся */
+.work-directions > .container{
+    height: 386px;
+}
+.work-directions .heading-title{
+    padding-bottom: 50px;
+}
+.directions-list{
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Comandos section */
+.section-comando{
+    width:1600px;
+    height: 648px;
+    margin-bottom: 0px;
+    margin-top: 94px;
+    background-color:#F5F4FA;
+}
+.section-comando .heading-title{
+    padding-bottom:50px;
+    padding-top: 94px;
+}
+.section-comando > .text{
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+.team .container{
+    width: 1170px;
+    height: 368px;
+}
+.team-list{
+    display:flex;
+    justify-content:space-around;
+}
+.team-list > .team-card{
+    box-sizing: border-box;
+    background-color: #ffffff;
+    max-width: 270px;
+    margin: 15px 15px;
+}
+team-card > .team-info{
+    padding: 30px 32px 24px;
+}
+.team-info > .heading-text{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.team-info > .text{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.card_img{
+    width: 270px;
+    height: 260px;
+}
 /* Portfolio page */
 .link-current{
     color: var(--accent-text-color)
@@ -240,66 +328,15 @@ footer > .logo{
     background-color:  var(--accent-text-color);
     color:var(--primery-white-color)
 }
-/* Section text parameters */
-.heading-title{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-    margin-top: 94px;
-}
-.heading-text{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    text-transform: uppercase;
-}
-/* Comandos section */
-.section-comando{
-    width:1600px;
-    height: 648px;
-    margin-bottom: 0px;
-    margin-top: 94px;
-    background-color:#F5F4FA;
-}
-.section-comando .heading-title{
-    padding-bottom:50px;
-    padding-top: 94px;
-}
-.section-comando > .text{
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-}
-.comando-list{
-    display:flex;
-}
 
-/* Header */
-header > .header-nav{
-    margin-bottom: 0px;
+/* Footer part */
+footer{
+    background-color: #2F303A;
 }
-.navigation{
-    display: flex;
-    align-items: center;
+footer > .logo{
+    color: var(--primery-white-color)
 }
-.nav{
-    display:flex;
-    margin-left: 93px;
-
-}
-.nav .link-nav{
-    display: block;
-}
-.nav .item:not(:last-child){
-    margin-right: 50px;
-}
-.contacts-list{
-    display: flex;
-    margin-left: 331px;
-}
-/* Oldschool selector "+" - сусідство */
-.contacts-list .contacts + .contacts{
-    margin-left: 50px;
+.address{
+    color: var(--primery-white-color);
 }
 
