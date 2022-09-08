@@ -163,7 +163,7 @@ body {
 }
 
 /* Header */
-.header-nav{
+.header-section > .container{
     margin-bottom: 0px;
 }
 .navigation{
@@ -192,15 +192,20 @@ body {
 
 /* Hero section */
 .hero{
+    width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: center;
     letter-spacing: 0.06em;
-    background-color:cyan;
+    background-color:#2F303A;
 }
 .hero-title{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
+    color: var(--primery-white-color);
 }
 
 .hero-button{
@@ -357,10 +362,33 @@ body {
     background-color: #2F303A;
     min-height: 252px;
 }
+.footer-section > .container{
+    display:flex;
+    height: 211px;
+    align-items: center;
+}
 .footer-section .logo{
     color: var(--primery-white-color)
 }
 .address{
     color: var(--primery-white-color);
+    font-style: normal;
 }
+.social{
+    display:flex;
+}
+.social-links:not(:last-child){
+    display: block;
+    margin-right: 10px;
+}
+.join{
+    display: block;
+    margin-bottom: 20px;
 
+    color:var(--primery-white-color);
+    font-weight: 700;
+    line-height: 1.14;
+}
+.top-part{
+    margin-right: 70px;
+}
