@@ -232,27 +232,22 @@ body {
 .features-list{
     display:flex;
     justify-content: space-between;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 .features-list > .item{
     padding: 15px 0;
     max-width: 270px;
 }
-.features-list > .item:first-child{
-    margin-left: -15px;
-}
-.features-list > .item:last-child{
-    margin-right: -15px;
-}
 .item > .svg-block{
     width: 270px;
     height: 120px;
     background-color:#F5F4FA;
-    background-position: center;
 }
 .item > .description{
     width: 270px;
 }
-.description > h3{
+.description > .heading-text{
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -266,12 +261,10 @@ body {
 .directions-list{
     display:flex;
     justify-content:space-between;
+    margin-left: -15px;
 }
 .directions-list > .card:not(:last-child){
     padding-right: 30px;
-}
-.directions-list > .card:first-child{
-    margin-left: -15px;
 }
 
 /* Comandos section */
@@ -305,16 +298,21 @@ body {
 .team-info > .heading-text{
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 5px;
 }
 .team-info > .text{
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 30px;
+    padding-top: 10px;
 }
 .card_img{
     width: 270px;
     height: 260px;
+}
+.social-contacts{
+    padding: 16px 32px 30px;
+}
+.team-social{
+    display: flex;
+    justify-content: space-evenly;
 }
 /* Portfolio page */
 .link-current{
@@ -333,9 +331,25 @@ body {
     font-size: 16px;
     line-height: 1.86;
 }
-.portfolio-list > li{
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.portfolio-element{
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
     margin-bottom: 30px;
 }
+.portfolio-element:nth-child(3n){
+    margin-right: 0;
+}
+.portfolio-element:nth-last-child(-n+3){
+    margin-bottom: 0;
+}
+
 .filter{
     margin-bottom: 34px;
 }
@@ -355,6 +369,15 @@ body {
 .btn-select:hover{
     background-color:  var(--accent-text-color);
     color:var(--primery-white-color)
+}
+.filter-list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 14px;
+    margin-bottom: 34px;
+}
+.filter-list > .item:not(:last-child){
+    margin-right: 8px;
 }
 
 /* Footer part */
