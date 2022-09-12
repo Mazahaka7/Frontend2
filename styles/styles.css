@@ -205,6 +205,9 @@ img{
     letter-spacing: 0.06em;
     background-color:#2F303A;
 }
+.hero-layout{
+    padding: 200px 452px;
+}
 .hero-title{
     font-weight: 900;
     font-size: 44px;
@@ -212,7 +215,6 @@ img{
     text-transform: uppercase;
     color: var(--primery-white-color);
 }
-
 .hero-button{
     min-width:200px;
     height:50px;
@@ -248,6 +250,12 @@ img{
     width: 270px;
     height: 120px;
     background-color:#F5F4FA;
+}
+.svg-block > img{
+    width: 70px;
+    height: 70px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .item > .description{
     width: 270px;
@@ -314,6 +322,9 @@ img{
 }
 .social-contacts{
     padding: 16px 32px 30px;
+}
+.social-contacts > a{
+    display: block;
 }
 .team-social{
     display: flex;
