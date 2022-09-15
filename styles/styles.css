@@ -110,14 +110,10 @@ img{
 }
 .container{
     width: 1170px;
-    outline: 1px dashed bisque;
+    /* outline: 1px dashed bisque; */
     padding: 0 15px;
     margin: 0 auto;
 }  
-.header-section {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 /* Main Logo */
 .logo{
     color:#212121;
@@ -181,6 +177,9 @@ img{
 }
 .nav .link-nav{
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
 }
 .nav .item:not(:last-child){
     margin-right: 50px;
