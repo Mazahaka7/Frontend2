@@ -378,6 +378,38 @@ img{
     display: flex;
     justify-content: space-evenly;
 }
+.team__item{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    /* background-size: 44px 44px; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.insta{
+    background-image: url(../images/insta_team.svg);
+}
+.twitter{
+    background-image: url(../images/twitter_team.svg);
+}
+.facebook{
+    background-image: url(../images/facebook_team.svg);
+}
+.linkid{
+    background-image: url(../images/linkid_team.svg);
+}
+/*  Clients section */
+.clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients__list{
+    display: flex;
+    justify-content: space-between;
+}
+.clients .heading-title{
+    padding-bottom: 50px;
+}
 /* Portfolio page */
 .link-current{
     color: var(--accent-text-color)
@@ -486,7 +518,7 @@ img{
 .footer__social-link{
     display: block;
 }
-.social-links:not(:last-child){
+.footer__social-links:not(:last-child){
     margin-right: 10px;
 }
 .join{
