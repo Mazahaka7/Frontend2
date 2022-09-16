@@ -384,22 +384,18 @@ img{
     display: inline-block;
     height: 44px;
     width: 44px;
-    /* background-size: 44px 44px; */
     background-repeat: no-repeat;
     background-position: center;
 }
-.insta{
-    background-image: url(../images/insta_team.svg);
+.social__item{
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
 }
-.twitter{
-    background-image: url(../images/twitter_team.svg);
+.social__item:hover{
+    background-color: var(--accent-text-color);
 }
-.facebook{
-    background-image: url(../images/facebook_team.svg);
-}
-.linkid{
-    background-image: url(../images/linkid_team.svg);
-}
+
 /*  Clients section */
 .clients{
     padding-top: 94px;
@@ -411,6 +407,13 @@ img{
 }
 .clients .heading-title{
     padding-bottom: 50px;
+}
+.clients__item{
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 5px;
 }
 /* Portfolio page */
 .link-current{
