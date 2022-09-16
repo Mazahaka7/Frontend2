@@ -130,14 +130,16 @@ img{
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
-.link-nav:hover{
+.link-nav:hover,
+.link-nav:focus{
     color: var(--accent-text-color);
 }
 #e-mail, #phone{
     color:var(--primary-text-color);
     text-decoration: none;
 }
-#e-mail:hover, #phone:hover{
+#e-mail:hover, #phone:hover,
+#e-mail:focus, #phone:focus{
     color: var(--accent-text-color);
 }
 
@@ -474,7 +476,8 @@ img{
     line-height: 1.6;
     text-align: center;
 }
-.btn-select:hover{
+.btn-select:hover,
+.btn-select:focus{
     background-color:  var(--accent-text-color);
     color:var(--primery-white-color)
 }
