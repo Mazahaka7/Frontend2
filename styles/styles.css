@@ -134,6 +134,16 @@ img{
 .link-nav:focus{
     color: var(--accent-text-color);
 }
+.link-nav--active:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #2196f3;
+    bottom: 0;
+    right: 0;
+}
 #e-mail, #phone{
     color:var(--primary-text-color);
     text-decoration: none;
@@ -176,6 +186,9 @@ img{
 .nav{
     display:flex;
     margin-left: 93px;
+}
+.nav > .item{
+    position: relative;
 }
 .nav .link-nav{
     display: block;
@@ -231,12 +244,16 @@ img{
     padding: 10px 32px;
     background-color: #2196F3;
     color: #ffffff;
+    opacity: 0.8;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
     font-size: inherit;
+}
+.hero__button:hover{
+    opacity: 1;
 }
 
 /* Контейнер Features */
@@ -306,6 +323,9 @@ img{
     text-align: center;
     padding-bottom: 50px;
 }
+.work__img{
+    position: relative;
+}
 .work__text {
     font-weight: 700;
     font-size: 14px;
@@ -317,8 +337,11 @@ img{
     text-decoration: none;
 
     color: #ffffff;
-    background-color: #757575;
+    background-color: rgba(47, 48, 58, 0.8);
     width: 370px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .work__list{
     display:flex;
@@ -429,9 +452,13 @@ img{
     fill: var(--accent-text-color);
 }
 /* Portfolio page */
-.link-current{
+/* .link-current{
     color: var(--accent-text-color)
+} */
+.portfolio >.container{
+    margin-top: 94px;
 }
+
 .hidden {
     display: none;
   }
@@ -460,6 +487,10 @@ img{
     border-top-left-radius:5px;
     border-top-right-radius: 5px;
     overflow: hidden;
+}
+.portfolio-element:hover{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .portfolio-element:nth-child(3n){
     margin-right: 0;
