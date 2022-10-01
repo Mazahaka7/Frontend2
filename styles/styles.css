@@ -355,9 +355,6 @@ img{
     max-width: 270px;
     margin: 15px 15px;
 }
-/* team-card > .team-info{
-    padding: 30px 60px;
-} */
 .team__info > .heading-text{
     text-align: center;
     padding-top: 30px;
@@ -373,27 +370,32 @@ img{
 .team__contacts{
     padding: 16px 32px 30px;
 }
-.team__contacts > a{
-    display: block;
-}
 .team__social{
     display: flex;
     justify-content: space-evenly;
 }
-.team__item{
-    display: inline-block;
-    height: 44px;
+.social__link{
+    display: flex;
     width: 44px;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 44px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.social__link:hover,
+.social__link:focus {
+    background-color: var(--accent-text-color);
+}
+.social__link:hover .social__item,
+.social__link:focus .social__item {
+    fill: var(--primery-white-color);
 }
 .social__item{
-    width: 44px;
-    height: 44px;
-    background-color: #ffffff;
-}
-.social__item:hover{
-    background-color: var(--accent-text-color);
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
 }
 
 /*  Clients section */
@@ -409,11 +411,22 @@ img{
     padding-bottom: 50px;
 }
 .clients__item{
-    display: block;
+    display: flex;
     width: 170px;
     height: 92px;
+    margin: 15px;
     border: 1px solid #AFB1B8;
     border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.client__icon{
+    min-width: 106px;
+    min-height: 60px;
+    fill: #AFB1B8;
+}
+.client__icon:hover{
+    fill: var(--accent-text-color);
 }
 /* Portfolio page */
 .link-current{
@@ -518,14 +531,31 @@ img{
     color: var(--primery-white-color);
     font-style: normal;
 }
-.footer__social{
+.bootom-part{
+    width: 206px;
+    height: 80px;
+}
+.footer-social{
     display:flex;
+    justify-content: space-between;
 }
-.footer__social-link{
-    display: block;
-}
-.footer__social-links:not(:last-child){
+.footer-social__link{
+    display: flex;
+    width: 44px;
+    height: 44px;
     margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+.footer-social__link:hover {
+    background-color:var(--accent-text-color);
+}
+.footer-social__item{
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
 }
 .join{
     display: block;
