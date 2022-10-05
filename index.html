@@ -41,7 +41,7 @@
     <div class="hero__bg">
         <div class="hero__layout">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero__button">Заказать услугу</button>
+            <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </div>
     </div>
 </section>
@@ -51,37 +51,21 @@
     <div class="container">
         <ul class="features__list list">
             <li class="features__item icon-antena">
-                <!-- <div class="features__img"> -->
-                    <!-- <img src="./images/antenna.svg" alt="Внимание к деталям"> -->
-                <!-- </div> -->
-                <!-- <div class="features__description"> -->
                     <h3 class="heading-text">Внимание к деталям</h3>
                     <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 <!-- </div> -->
             </li>
             <li class="features__item icon-clock">
-                <!-- <div class="features__img">
-                    <img src="./images/clock.svg" alt="Пунктуальность">
-                </div>            -->
-                <!-- <div class="features__description"> -->
                     <h3 class="heading-text">Пунктуальность</h3>
                     <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 <!-- </div> -->
             </li>
             <li class="features__item icon-diagram">
-                <!-- <div class="features__img">
-                    <img src="./images/diagram.svg" alt="Планирование">
-                </div>             -->
-                <!-- <div class="features__description"> -->
                     <h3 class="heading-text">Планирование</h3>
                     <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 <!-- </div> -->
             </li>
             <li class="features__item icon-astronaut">
-                <!-- <div class="features__img">
-                    <img src="./images/astronaut.svg" alt="Современные технологнии">
-                </div>       -->
-                <!-- <div class="features__description"> -->
                     <h3 class="heading-text">Современные технологии</h3>
                     <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 <!-- </div> -->
@@ -167,7 +151,7 @@
             <img class="card_img" src="./images/photo2.jpeg" alt="Фото Фронтенд специалиста" width="370">
         </div>
         <div class="team__info">
-            <h3 class="heading-text">Ольга Понько</h3>
+            <h3 class="heading-text">Ольга Понька</h3>
             <p class="text">Frontend Developer</p>
         </div>
         <div class="team__contacts">
@@ -384,5 +368,39 @@
     </div>
     </div>
 </footer>
+<div class="backdrop backdrop--hidden" data-modal>
+    <div class="modal">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eius saepe non odio, quae nulla ad quos ab, ut quas maiores quis impedit rerum molestiae neque nesciunt nostrum aliquid cupiditate!</p>
+        <button data-modal-close>Закрыть</button>
+    </div>
+
+</div>
+<!-- Модальное окно
+    «D1» Выполнена разметка и оформление «бекдропа» (тёмного полупрозрачного фона) модального окна.
+    
+    «D2» «Бекдроп» заполняет 100% высоты и ширины вьюпорта браузера и фиксирован в нём.
+    
+    «D3» Выполнена разметка и оформление модального окна.
+    
+    «D4» Модальное окно вертикально и горизонтально спозиционировано посередине бекдропа.
+    
+    «D5» Выполнена разметка и оформление кнопки закрытия модального окна в верхнем правом углу.
+    
+    «D6» Изначально модальное окно и бекдроп скрыты при помощи класса is-hidden на бекдропе, в селекторе которого
+    используются свойства visibility, opacity и pointer-events.
+    
+    «D7» Если убрать с бекдропа класс is-hidden - появляется бекдроп и модальное окно.
+    
+    «D8» Появление и скрытие модального окна анимировано при помощи перехода с произвольным эффектом, например scale или
+    translate, и opacity.
+    
+    Открытие/закрытие модального окна
+    Модальное окно с формой заявки открывается по клику на кнопку "Заказать услугу". Для того чтобы скрипт сработал
+    необходимо добавить в разметку специальные атрибуты, по которым скрипт ищет элементы:
+    
+    data-modal-open - на кнопку открытия модального окна.
+    data-modal-close - на кнопку закрытия модального окна.
+    data-modal - на бекдроп модального окна. -->
+<script src="./js/modal.js"></script>
 </body>
 </html>
