@@ -452,13 +452,19 @@ img{
     min-width: 106px;
     min-height: 60px;
     fill: #AFB1B8;
+    
+    perspective-origin: center;
+    perspective: 100px;
 
-    transform: rotateY(0);
-    transition: transfrom 250ms linear;
+    /* transform: rotateY(0); */
+    /* transition: transfrom 250ms linear; */
+    transform:translate3D(0px, 0px, 0px);
 }
-.client__icon:hover{
+.client__icon:hover {
     fill: var(--accent-text-color);
-    transform: rotateY(30deg);
+    /* transform: rotateY(45deg); */
+    transform: translate3D(10px, 10px, 8px);
+
 }
 
 /* Portfolio page */
@@ -622,7 +628,7 @@ img{
     justify-content: center;
     align-items: center;
 }
-.footer-social__link:hover {
+.footer-social__link:hover, .footer-social__link:focus {
     background-color:var(--accent-text-color);
 }
 .footer-social__item{
